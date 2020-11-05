@@ -1,0 +1,388 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf);
+  }
+
+body{
+    width:1366px;
+    margin:auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    line-height: 22px;
+  }
+
+nav{
+    position: relative;
+    height: 92.51px;
+    font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    color: #060606;
+    font-weight: 500;
+}
+nav a{
+    color: #060606;
+    font-size: 18px;
+}
+nav ul li{
+    display:inline-block; 
+}
+
+ul{
+    margin-top: 51px;
+    list-style: none;
+}
+nav a{
+    text-decoration:none;
+    margin-left:35px;
+}
+
+ul li a{
+    text-decoration:none;
+  
+    ;
+}
+#logo a {
+display:inline-block;
+width: 159px;
+height: 146px;
+margin-left: 62px;
+}
+
+#lang{
+    width:142px;
+    margin-top:51px ;
+    text-align: center;
+}
+nav::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left:0;
+    height:55px;
+    width:100%;
+    background: url(../img/ripped_6_7.svg) bottom center;
+}
+
+.description{
+    position: relative;
+    height: 414px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.description::after{
+    content: "";
+    position: absolute;
+    top:100%;
+    left:0;
+    height:55px;
+    width:100%;
+    background: url(../img/ripped_6_7.svg) bottom center;
+}
+
+.description section{  
+margin:auto;
+height:114px;
+width:654px;
+font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+color: #2F4858;
+font-size: 18px;
+line-height: 22px;
+}
+
+#images{
+   position: relative;
+   height:383px;
+}
+
+#images::after{
+    content: "";
+    position: absolute;
+    top:86%;
+    left:0;
+    height:55px;
+    width:100%;
+    background: url(../img/ripped_6_8.svg) bottom center;
+}
+
+#images::before{
+    content: "";
+    position: absolute;
+    top:0%;
+    left:0;
+    height:55px;
+    width:100%;
+    background: url(../img/ripped_6_7.svg) top center;
+}
+#images-flex{
+    display:flex;
+    flex-direction: row;
+}
+.images-flex{
+    display:flex;
+    flex-direction: column;
+}
+.images-flex img{
+    display:block;
+}
+
+#links{
+    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
+
+.choice{
+    text-align: center;
+    margin:auto;
+}
+.choice a{
+    display:block;
+    width:233px;
+    height: 50px;
+    line-height:50px;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+    color:#FFF;
+    background-color: #FFA800;
+}
+
+.choice h4{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Oswald,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35.57px;
+}
+
+#form{
+    width:612px;
+    margin:auto;
+}
+
+#form h3{
+    text-align: center;
+    font-family:Oswald,Verdana, Geneva, Tahoma, sans-serif;
+    font-size:30px;
+    font-weight: 500;
+    line-height: 44.46px;
+}
+
+#form form{
+    display:grid;
+}
+#first-row input{
+    width: 290px;
+}
+#first-row input:first-child{
+    margin-right: 7px;
+}
+#first-row input:last-child{
+    margin-left: 7px;
+}
+#form input{
+    margin-bottom: 10px;
+    padding-left: 12px;
+    font-family:  Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    height:43px;
+    line-height: 43px;
+    background-color:#E7E7E7;
+    border:none;
+    border-radius: 6px;
+}
+ #form textarea{
+    resize: none;
+     margin-top:10px;
+    padding-left: 12px;
+     height:220px;
+     width:612px;
+     font-size: 18px;
+    font-weight: 400;
+    line-height: 43px;
+     border-radius: 6px;
+     background-color:#E7E7E7;
+     border:none;
+     font-family:  Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ #form label{
+    font-family:  Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    margin:10px 0;
+ }
+
+ .checkbox-container{
+ display: block;
+ position: relative;
+ cursor: pointer;
+ font-size: 14px;
+ padding-left: 35px;
+ line-height: 16px;
+ -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+ }
+ 
+ .checkbox-container input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+ }
+ .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width:16px;
+    height:16px;
+    background-color:#E7E7E7;
+    border:none;
+    border-radius: 2px;
+  }
+
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #4B4B4B;
+  }
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #submit{
+      margin-top:20px;
+    width:182px;
+    height: 62px;
+    margin:auto;
+  }
+  #submit input{
+      margin-top:40px;
+      padding:0;
+      font-size: 24px;
+      line-height: 24px;
+      width:142px;
+      height: 62px;
+      background-color: #FFA800;
+      color:#FFF;
+      border-radius: 30px;
+  }
+
+  #section3{
+      position: relative;
+    z-index: 2;
+      margin-top: 150px;
+      height: 481.59px;
+      background-image: url(../img/Subtract.png);
+  }
+
+  #section3 section{
+      display: inline-block;
+      width: 100%;
+      margin-top: 60px;
+     
+      
+  }
+  #section3 section h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-family:Oswald,Verdana, Geneva, Tahoma, sans-serif;
+    font-size:24px;
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+
+  #section3 section ul li{
+    display:inline-block; 
+  margin-left:90px;
+  }
+  footer{
+      z-index: -1;
+      margin-top:-30px;
+      background-color:#2F4858;
+  }
+  
+footer section{
+ height:325px;
+  width: 100%;
+  margin-top: 70px;
+  display: inline-flex;
+  color:#FFF;
+  font-family:Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+footer section div{
+    width:25%;
+    padding:10px 32px;
+}
+footer section div:last-child{
+   text-align: right;
+}
+
+footer section div:first-child{
+    text-align: center;
+ }
+
+footer section a{
+    text-decoration: none;
+    color:#FFF;
+}
+
+
+
+.social li a{
+    float: right;
+    margin-left: 30px;
+}
+
+footer span{
+     color:#FFF;
+     font-family:Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 14px;
+   }
+
+   footer span a{
+       text-decoration: none;
+    color:#FFF;
+    font-family:Montserrat,Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+  }
+
+  footer span:first-child{
+      text-align: left;
+  }
